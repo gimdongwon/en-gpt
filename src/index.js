@@ -8,6 +8,7 @@ app.get("/", function (req, res) {
 });
 
 app.use("/api/openai", require("./routes"));
+app.use("/api/dongwon", require("./routes/dongwon"));
 
 const server = app.listen(PORT, function () {
   const host = server.address().address;
